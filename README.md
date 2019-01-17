@@ -1,5 +1,5 @@
 # predix-edge-java-jre-1-11
-Just a JRE extending Alpine Linux to keep it small
+A JRE using Java Modules and extending Alpine Linux to keep it small
 
 
 ## Docker Build
@@ -20,4 +20,4 @@ docker build --no-cache --build-arg https_proxy=$http_proxy --build-arg no_proxy
 docker run predixadoption/predix-edge-java-jre-1-11:latest 
 ```
 
-[![Analytics](https://predix-beacon.appspot.com/UA-82773213-1/predix-edge-java-jre-1-8/readme?pixel)](https://github.com/PredixDev)
+[![Analytics](https://predix-beacon.appspot.com/UA-82773213-1/predix-edge-java-jre-1-11/readme?pixel)](https://github.com/PredixDev)
