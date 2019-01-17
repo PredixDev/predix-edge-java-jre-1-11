@@ -1,2 +1,23 @@
 # predix-edge-java-jre-1-11
-A Lightweight JRE 1.11 Docker Container
+Just a JRE extending Alpine Linux to keep it small
+
+
+## Docker Build
+
+```bash
+docker build --no-cache -t predixadoption/predix-edge-java-jre-1-11:latest -f Dockerfile .
+```
+
+or with proxy
+
+```bash
+docker build --no-cache --build-arg https_proxy=$http_proxy --build-arg no_proxy=$no_proxy --build-arg http_proxy=$http_proxy -t predixadoption/predix-edge-java-jre-1-11:latest -f Dockerfile .
+```
+
+## Docker Run
+
+```bash
+docker run predixadoption/predix-edge-java-jre-1-11:latest 
+```
+
+[![Analytics](https://predix-beacon.appspot.com/UA-82773213-1/predix-edge-java-jre-1-8/readme?pixel)](https://github.com/PredixDev)
