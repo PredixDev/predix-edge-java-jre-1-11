@@ -11,9 +11,9 @@ RUN java --list-modules
 #Run e.g. jdeps --list-deps FlightRecorder.jar
 #OR if you have dependent modules, get the java modules those modules need - jdeps --module-path /opt/javafx-sdk-11/lib --add-modules=javafx.controls --list-deps FlightRecorder.jar
 
-#Omitted to decrease size - java.se,java.smartcardio
+#Omitted to decrease size - java.smartcardio
 RUN jlink \
-    --add-modules java.instrument,java.logging,java.management,java.management.rmi,java.naming,java.net.http,java.prefs,java.rmi,java.scripting,java.security.jgss,java.security.sasl,java.sql,java.sql.rowset,java.transaction.xa,java.xml,java.xml.crypto\
+    --add-modules java.instrument,java.logging,java.management,java.management.rmi,java.naming,java.net.http,java.prefs,java.rmi,java.scripting,java.security.jgss,java.security.sasl,java.sql,java.sql.rowset,java.transaction.xa,java.xml,java.xml.crypto,java.se\
     --verbose \
     --strip-debug \
     --compress 2 \
@@ -35,7 +35,7 @@ LABEL maintainer="Predix Edge Apps"
 LABEL hub="https://hub.docker.com"
 LABEL org="https://hub.docker.com/u/predixadoption"
 LABEL repo="predix-edge-java-jre-1-11"
-LABEL version="1.0.1"
+LABEL version="1.0.2"
 LABEL support="https://forum.predix.io"
 LABEL license="https://github.com/PredixDev/predix-docker-samples/blob/master/LICENSE.md"
 

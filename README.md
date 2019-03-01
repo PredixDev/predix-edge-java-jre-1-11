@@ -1,5 +1,5 @@
 # predix-edge-java-jre-1-11
-A JRE using Java Modules and extending Alpine Linux to keep it small.
+A JRE using Java Modules and extending Alpine Linux to keep it small
 
 
 ## Docker Build
