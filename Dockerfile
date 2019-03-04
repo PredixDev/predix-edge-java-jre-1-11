@@ -33,9 +33,9 @@ RUN strip -p --strip-unneeded /opt/jre-minimal/lib/server/libjvm.so
 FROM panga/alpine:3.7-glibc2.25
 LABEL maintainer="Predix Edge Apps"
 LABEL hub="https://hub.docker.com"
-LABEL org="https://hub.docker.com/u/predixadoption"
+LABEL org="https://hub.docker.com/u/predixedge"
 LABEL repo="predix-edge-java-jre-1-11"
-LABEL version="1.0.2"
+LABEL version="1.0.3"
 LABEL support="https://forum.predix.io"
 LABEL license="https://github.com/PredixDev/predix-docker-samples/blob/master/LICENSE.md"
 
